@@ -54,6 +54,21 @@ trend and how much to trust it. Hover an item for its real in-game tooltip.
 
 **Copy price notes** puts `~price 12 chaos` lines in your clipboard, ready to paste in game.
 
+### Scarabs: sell, or feed the 3-for-1 vendor?
+
+Three scarabs handed to an NPC come back as one random scarab, so for the cheap ones the recipe
+is worth more than the sale. Every scarab lot carries its verdict right on the row:
+`vendor 3→1` in green when the recipe wins, `vendor 3→1?` in amber when no reliable model can
+call it — selling stays the safe choice — and `sell` in grey when selling wins whichever way you
+count. Hover the badge for the threshold and where the number comes from.
+
+That threshold is what one scarab fed into the recipe is worth, computed over every priced
+scarab of the league and weighted by the return odds from the community aggregate of
+[ScarabEV](https://github.com/Doobyy/ScarabEV) — the odds are what make it honest, since the
+expensive scarabs are precisely the ones that rarely come back. It compares directly to the
+**Unit** column. A lot marked `vendor 3→1` stays visible even with the **to sell only** filter
+on, since that's exactly where there's something to say about it.
+
 ### Two dates, one answer
 
 Archive a scan with **⧉ Snapshot**, then compare two of them. The difference is split between
@@ -61,6 +76,29 @@ what came from **items** you gained or lost and what came from **prices** — th
 The two always add up exactly to the total change.
 
 ![The comparison screen: value change, from items, from prices, and the per-lot detail](docs/en/compare.png)
+
+### An atlas tree, right in the app
+
+**⌖ Atlas** opens a full atlas tree editor: build a farming strategy, save it under a name,
+reopen it later, and send it to pathofexile.com or poeplanner.com. It needs neither your cookie
+nor a scan — it works the minute the app is installed.
+
+![The atlas tree editor: the tree, the mechanics legend, and the saved trees column](docs/en/atlas.jpg)
+
+It handles like the game. **Left click** allocates a node, and the shortest path to it if it's
+far away; **right click** frees it, along with whatever is no longer connected to the start.
+Drag to pan, wheel to zoom, hover a node for its stats. The point counter knows about the 20
+extra points *Unwavering Vision* grants, and the **Tree** selector switches between the
+**current league** atlas — league mechanics included — and the **permanent leagues** one.
+
+- **Find a mechanic's clusters.** Click *Maps*, *Scarabs*, *Breach*, *Delirium*… in the legend, or the icon at the centre of a cluster, and its groups come forward while everything else fades. Up to eight at a time, each with its own colour *and* line pattern, so they stay apart.
+- **Search** any node by name or by what it does.
+- **Save your trees** under a name, with notes, and reopen them whenever.
+- **Import a link** from pathofexile.com or poeplanner.com — both formats are read, and the app finds out on its own which of the two atlases the link was built on.
+- **Export** to either site, with **Copy** and **Open**.
+
+The game itself has no atlas tree import: the point is to keep your plan open beside it while
+you click the nodes in.
 
 <details>
 <summary><b>More screenshots</b></summary>
@@ -176,6 +214,22 @@ sur 7 jours et la fiabilité du prix. Le survol d'un item affiche sa vraie infob
 **Copier les notes de prix** met dans le presse-papier des lignes `~price 12 chaos`, prêtes à
 coller en jeu.
 
+### Scarabés : vendre, ou passer au vendor « 3 pour 1 » ?
+
+Trois scarabés donnés à un PNJ rendent un scarabé tiré au hasard : pour les scarabés bon marché,
+la recette rapporte donc plus que la vente. Chaque lot de scarabés porte son verdict directement
+sur la ligne : `vendor 3→1` en vert quand la recette gagne, `vendor 3→1 ?` en ambre quand aucun
+modèle fiable ne tranche — la vente reste alors le choix sûr — et `vendre` en gris quand la vente
+gagne quelle que soit la façon de compter. Le survol du badge donne le seuil et d'où vient le
+chiffre.
+
+Ce seuil, c'est ce que vaut un scarabé injecté dans la recette : il est calculé sur tous les
+scarabés cotés de la ligue, pondérés par les fréquences de sortie de l'agrégat public de
+[ScarabEV](https://github.com/Doobyy/ScarabEV) — ce sont ces fréquences qui rendent le chiffre
+honnête, puisque les scarabés chers sont justement ceux qui sortent rarement. Il se compare
+directement à la colonne **Unité**. Un lot marqué `vendor 3→1` reste visible même avec le filtre
+**uniquement à vendre**, sinon il disparaîtrait là où il y a justement quelque chose à en dire.
+
 ### Deux dates, une réponse
 
 **⧉ Snapshot** archive un scan ; il suffit ensuite d'en comparer deux. L'écart est partagé
@@ -183,6 +237,30 @@ entre ce qui vient des **items** gagnés ou perdus et ce qui vient des **prix** 
 deux parts se somment toujours exactement à l'écart total.
 
 ![L'écran de comparaison : écart de valeur, dû aux items, dû aux prix, et le détail par lot](docs/fr/compare.png)
+
+### Un arbre d'atlas, dans l'app
+
+**⌖ Atlas** ouvre un véritable éditeur d'arbre d'atlas : tu composes une stratégie de farming, tu
+l'enregistres sous un nom, tu la rouvres plus tard, et tu l'envoies sur pathofexile.com ou sur
+poeplanner.com. Ni cookie ni scan nécessaires — c'est utilisable dès l'installation.
+
+![L'éditeur d'arbre d'atlas : l'arbre, la légende des mécaniques, et la colonne des arbres enregistrés](docs/fr/atlas.jpg)
+
+Le maniement est celui du jeu. **Clic gauche** alloue un nœud, et le plus court chemin pour
+l'atteindre s'il est loin ; **clic droit** le libère, en emportant ce qui n'est plus relié au
+départ. Glisser déplace, la molette zoome, le survol donne les stats du nœud. Le compteur de
+points sait que *Unwavering Vision* en offre 20 de plus, et le sélecteur **Arbre** bascule entre
+l'atlas de la **ligue en cours** — mécaniques de ligue comprises — et celui des **ligues
+permanentes**.
+
+- **Retrouver les clusters d'une mécanique.** Un clic sur *Maps*, *Scarabs*, *Breach*, *Delirium*… dans la légende, ou sur l'icône au centre d'un cluster, fait ressortir ses groupes et estompe le reste. Huit mécaniques au plus à la fois, chacune avec sa couleur *et* son motif de trait, pour qu'elles restent distinctes.
+- **Chercher** n'importe quel nœud par son nom ou par ce qu'il fait.
+- **Enregistrer tes arbres** sous un nom, avec des notes, et les rouvrir quand tu veux.
+- **Importer un lien** pathofexile.com ou poeplanner.com — les deux formats sont lus, et l'app trouve toute seule sur lequel des deux atlas le lien a été bâti.
+- **Exporter** vers l'un ou l'autre site, avec **Copier** et **Ouvrir**.
+
+Le jeu, lui, n'a pas d'import d'arbre d'atlas : l'intérêt est de garder ton plan ouvert à côté
+pendant que tu cliques les nœuds.
 
 <details>
 <summary><b>Plus de captures</b></summary>
