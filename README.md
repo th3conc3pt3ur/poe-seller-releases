@@ -62,6 +62,8 @@ is worth more than the sale. Every scarab lot carries its verdict right on the r
 call it — selling stays the safe choice — and `sell` in grey when selling wins whichever way you
 count. Hover the badge for the threshold and where the number comes from.
 
+![Scarab lots sorted by unit price: the verdict goes from vendor 3→1 to sell as the price climbs](docs/en/scarabs.jpg)
+
 That threshold is what one scarab fed into the recipe is worth, computed over every priced
 scarab of the league and weighted by the return odds from the community aggregate of
 [ScarabEV](https://github.com/Doobyy/ScarabEV) — the odds are what make it honest, since the
@@ -222,6 +224,8 @@ sur la ligne : `vendor 3→1` en vert quand la recette gagne, `vendor 3→1 ?` e
 modèle fiable ne tranche — la vente reste alors le choix sûr — et `vendre` en gris quand la vente
 gagne quelle que soit la façon de compter. Le survol du badge donne le seuil et d'où vient le
 chiffre.
+
+![Les lots de scarabés triés par prix unitaire : le verdict passe de vendor 3→1 à vendre à mesure que le prix monte](docs/fr/scarabs.jpg)
 
 Ce seuil, c'est ce que vaut un scarabé injecté dans la recette : il est calculé sur tous les
 scarabés cotés de la ligue, pondérés par les fréquences de sortie de l'agrégat public de
