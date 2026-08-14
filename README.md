@@ -12,6 +12,8 @@
 
 ### [![Download for Windows](https://img.shields.io/badge/Download-for%20Windows-c8aa6e?style=for-the-badge&logo=windows&logoColor=c8aa6e&labelColor=1b1611)](../../releases/latest)
 
+### [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V1Q6251R21)
+
 **English** · [Français](#francais)
 
 </div>
